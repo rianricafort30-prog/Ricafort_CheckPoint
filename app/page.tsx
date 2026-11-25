@@ -1,17 +1,29 @@
-
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <main>
-      <h1>Hello, my name is RIAN BULILAN RICAFORT</h1>
+    <main className="hero">
+      <section className="hero-content">
+        <p className="eyebrow">Welcome to my personal website</p>
 
-      <p>
-        I am a student who enjoys learning about technology.
-        I want to improve my skills in creating websites.
-      </p>
+        <h1>
+          Hello, I&apos;m <span>Rian Bulilan Ricafort</span>
+        </h1>
 
-      <Link href="/projects">See my projects</Link>
+        <p className="intro">
+          I&apos;m a student who enjoys learning technology and building simple,
+          useful websites.
+        </p>
+
+        <div className="actions">
+          <Link href="/projects" className="button button-primary">
+            View Projects
+          </Link>
+          <Link href="/about" className="button button-secondary">
+            About Me
+          </Link>
+        </div>
+      </section>
     </main>
   );
 }
